@@ -1,0 +1,147 @@
+.main {
+    background-color: #f9f4e3;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.heroSection {
+    position: relative;
+    font-size: 75px;
+    animation: fadeIn 5s;
+}
+
+.B {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: bounce-up-down 1s ease-in-out alternate infinite;
+    animation-delay: 100ms;
+}
+
+
+.R {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: bounce-up-down 1s ease-in-out alternate infinite;
+    animation-delay: 200ms;
+}
+
+.E-1 {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: bounce-up-down 1s ease-in-out alternate infinite;
+    animation-delay: 300ms;
+}
+
+
+.E-2 {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: bounce-up-down 1s ease-in-out alternate infinite;
+    animation-delay: 400ms;
+}
+
+
+.Z {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: bounce-up-down 1s ease-in-out alternate infinite;
+    animation-delay: 500ms;
+}
+
+.Y {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: bounce-up-down 1s ease-in-out alternate infinite;
+    animation-delay: 600ms;
+}
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    animation: bounce-up-down1 1s ease-in-out alternate infinite,
+        fadeIn 5s forwards;
+    opacity: 0;
+    animation-delay: 300ms;
+}
+
+.afterMain{
+    background-color: #f9f4e3;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.col-sm-6{
+    
+}
+
+.fadeIn{
+    animation: fadeIn 4s forwards;
+}
+.fadeOut{
+    animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes bounce-up-down {
+    from {
+        transform: translateY(-3px);
+    }
+
+    to {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes bop {
+    to {
+        top: 10%;
+    }
+}
+
+@keyframes breeze {
+    to {
+        left: 105%;
+    }
+}
+
+@keyframes bounce-up-down1 {
+    from {
+        transform: translateY(-3px);
+    }
+
+    to {
+        transform: translateY(3px);
+    }
+}
