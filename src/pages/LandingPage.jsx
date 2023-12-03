@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import "../css/LandingPage.css";
 import 'bootstrap/dist/css/bootstrap.css';
+import RedButton from "../assests/breezy_button.svg"
+
 
 export function LandingPage() {
     const main = useRef();
@@ -52,9 +54,14 @@ export function LandingPage() {
                 {/* <h4 className='arrow'>↓</h4> */}
             </div>
             <div className='afterMain fadeOut' ref={afterMain}>
-                <div className='container text-center'>
+                <div className="breath">
+                    <button>
+                        <RedButton/>
+                    </button>
+                </div>
+                {/* <div className='container text-center'>
                     <div className='row'>
-                        <div className='col-sm-6'>
+                        <div className='col-sm-6 b'>
                             <h1>Breathe</h1>
                         </div>
                         <div className='col-sm-6'>
@@ -67,8 +74,7 @@ export function LandingPage() {
                             <h1>Post-its</h1>
                         </div>
                     </div>
-
-                </div>
+                </div> */}
             </div>
         </div>
     );

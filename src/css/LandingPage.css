@@ -95,6 +95,14 @@
     animation: fadeOut 4s forwards;
 }
 
+.b{
+    background: url(../assests/breezy_button.svg);
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    outline: 1px solid red;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
