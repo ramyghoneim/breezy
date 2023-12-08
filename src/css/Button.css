@@ -1,19 +1,22 @@
-button {
+.btn1 {
   all: unset;
   display: grid;
   place-items: center;
   width: fit-content;
   height: fit-content;
   margin: 10rem;
-  /*outline: 1px solid red;*/
   font-size: 3rem;
   position: relative;
   transition: scale 0.3s ease-in-out;
-}
-button:active {
-  scale: 0.9;
-}
-svg {
-  position: absolute;
-  z-index: -1;
+
+  & button:active {
+    scale: 0.9;
+  }
+  
+  & svg {
+    position: absolute;
+    z-index: -1;
+    width: 22vw;
+    height: 22vw;
+  }
 }

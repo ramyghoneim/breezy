@@ -15,6 +15,7 @@ export function LandingPage() {
     };
 
     const mainObserver = new IntersectionObserver((entries, observer) => {
+      if (!afterMain.current || !main.current) return
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           afterMain.current.classList.add("fadeIn");
@@ -34,6 +35,7 @@ export function LandingPage() {
     mainObserver.observe(afterMain.current);
 
     return () => {
+      if (!afterMain.current || !main.current) return
       mainObserver.unobserve(main.current);
       mainObserver.unobserve(afterMain.current);
     };
@@ -52,8 +54,8 @@ export function LandingPage() {
         </h1>
       </div>
       <div className="afterMain fadeOut" ref={afterMain}>
-        <Button text={"Breathe"} color="#ffc9c9" />
-        <Button text={"Calender"} color="#FFEC99" />
+        <Button text={"Breathe"} color="#ffc9c9" to="/breathe" />
+        <Button text={"Calender"} color="#FFEC99" to="/calendar"/>
         <Button text={"Notebook"} color="#A5D8FF" />
         <Button text={"Post-its"} color="#B2F2BB" />
       </div>

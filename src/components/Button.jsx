@@ -1,9 +1,15 @@
 import React from "react";
-import './Button.css'
+import '../css/Button.css';
+import { Link, useNavigate } from 'react-router-dom';
 
-const Button = ({ text, color }) => {
+const Button = ({ text, color, to }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(to);
+  };
   return (
-    <button onClick={()=> {console.log("THE BUTTON WAS CLICKED!")}}>
+    <button onClick={handleClick} className="btn1">
       <svg
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
