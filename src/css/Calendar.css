@@ -1,75 +1,103 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-}
-
 .calendar {
-  margin: 0;
-  display: flex;
+  height: 100vh;
+  background-color: #f9f4e3;
+  display: grid;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+  grid-template-columns: 1.9fr 1fr;
+  
 
-.header-text {
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  color: orange;
-}
+  & .css-1eurbeq-MuiPickersToolbar-root-MuiDatePickerToolbar-root {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #f1c32c;
+  }
 
-.css-u0soqy-MuiPickerStaticWrapper-root {
-  box-shadow: 3px 2px 10px 5px #888888 !important;
-}
+  /* & .css-4pax7l-MuiPickersLayout-root {
+    outline: solid red 5px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    height: 100vh;
+    margin: 0;
+    gap: -5vh;
+  } */
 
-.css-hlj6pa-MuiDialogActions-root {
-  display: none !important;
-}
+  & .css-u0soqy-MuiPickerStaticWrapper-root {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.25) !important;
+    display: grid;
+    place-items: center;
+    padding: 2rem 3rem;
+    padding-top: 3rem;
+    width: fit-content;
+    border-radius: 1rem;
+  }
 
-.css-j88s13-MuiPickersToolbar-root-MuiDatePickerToolbar-root
-  .MuiPickersToolbar-penIconButton {
-  display: none !important;
-}
+  & .MuiPickerStaticWrapper-content {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 1rem;
+  }
 
-.css-j88s13-MuiPickersToolbar-root-MuiDatePickerToolbar-root {
-  padding: 0 !important;
-}
+  & .MuiTypography-root {
+    font-family: inherit;
+    padding: 0.2rem;
+  }
 
-.css-hq2kpw-MuiGrid-root-MuiPickersToolbar-content {
-  justify-content: center !important;
-  background-color: orange;
-  padding: 1rem;
-}
+  & .css-hlj6pa-MuiDialogActions-root {
+    display: none !important;
+  }
 
-.css-1hbyad5-MuiTypography-root {
-  display: none !important;
-}
+  & .css-j88s13-MuiPickersToolbar-root-MuiDatePickerToolbar-root .MuiPickersToolbar-penIconButton {
+    display: none !important;
+  }
 
-.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
-  background-color: orange !important;
-}
+  & .css-epd502 {
+    outline: solid #f1c32c;
+  }
 
-.css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
-  background-color: orange !important;
-  color: black !important;
-}
-.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
-  border-color: transparent !important;
-  color: orange;
-}
+  & .MuiPickersToolbar-root {
+    margin: 0;
+  }
 
-.css-144dnr3-MuiBadge-badge {
-  color: green;
-}
+  & .MuiDialogActions-root {
+    padding-bottom: 0;
+  }
 
-.css-1n2mv2k {
-  background-color: #f4f4f4;
-  margin-bottom: 1rem;
+  & .MuiDialogActions-root>* {
+    color: #e3af04;
+    font-family: inherit;
+    font-size: 110%;
+  }
+
+  & .css-hq2kpw-MuiGrid-root-MuiPickersToolbar-content {
+    justify-content: center !important;
+    background-color: #f1c32c;
+    padding: 1rem;
+  }
+
+  & .css-1hbyad5-MuiTypography-root {
+    display: none !important;
+  }
+
+  & .css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+    background-color: #f1c32c !important;
+  }
+
+  & .css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+    background-color: #f1c32c !important;
+    color: black !important;
+  }
+
+  & .css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+    border-color: transparent !important;
+    color: #f1c32c;
+  }
+
+  & .css-144dnr3-MuiBadge-badge {
+    color: green;
+  }
+
+  & .css-1n2mv2k {
+    background-color: #f4f4f4;
+    margin-bottom: 1rem;
+  }
 }

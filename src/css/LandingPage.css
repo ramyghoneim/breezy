@@ -78,12 +78,23 @@
   display: grid;
   padding-inline: 15vw;
   place-items: center;
-  grid-template-areas:
-    "a b"
-    "c d";
   position: relative;
 }
-
+.flex{
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+.justify-center{
+  justify-content: center;
+}
+.items-center{
+  align-items: center;
+}
+.gap-4{
+  gap: 1rem;
+}
 .fadeIn {
   animation: fadeIn 4s forwards;
 }

@@ -54,10 +54,13 @@ export function LandingPage() {
         </h1>
       </div>
       <div className="afterMain fadeOut" ref={afterMain}>
-        <Button text={"Breathe"} color="#ffc9c9" to="/breathe" />
-        <Button text={"Calender"} color="#FFEC99" to="/calendar"/>
-        <Button text={"Notebook"} color="#A5D8FF" />
-        <Button text={"Post-its"} color="#B2F2BB" />
+        <div className= "flex flex-col justify-center items-center">
+          <div className="flex gap-4">
+            <Button text={"Breathe"} color="#ffc9c9" to="/breathe" />
+            <Button text={"Calender"} color="#FFEC99" to="/calendar" />
+          </div>
+        </div>
+        <Button text={"Notes"} color="#B2F2BB" to="/notes" />
       </div>
     </div>
   );
