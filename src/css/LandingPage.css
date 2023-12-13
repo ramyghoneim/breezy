@@ -80,26 +80,33 @@
   place-items: center;
   position: relative;
 }
-.flex{
+
+.flex {
   display: flex;
 }
-.flex-col{
+
+.flex-col {
   flex-direction: column;
 }
-.justify-center{
+
+.justify-center {
   justify-content: center;
 }
-.items-center{
+
+.items-center {
   align-items: center;
 }
-.gap-4{
+
+.gap-4 {
   gap: 1rem;
 }
+
 .fadeIn {
-  animation: fadeIn 4s forwards;
+  animation: fadeIn 2.4s forwards;
 }
+
 .fadeOut {
-  animation: fadeOut 4s forwards;
+  animation: fadeOut 1s forwards;
 }
 
 @keyframes fadeIn {
@@ -111,6 +118,7 @@
     opacity: 1;
   }
 }
+
 @keyframes fadeOut {
   from {
     opacity: 1;

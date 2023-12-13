@@ -6,6 +6,8 @@ import Logo from "../components/Logo";
 import arrow1 from "../assets/arrow1.svg";
 import arrow2 from "../assets/arrow2.svg"
 import arrow3 from "../assets/arrow3.svg"
+import char1 from "../assets/char1.svg"
+import char2 from "../assets/char2.svg"
 
 export function LandingPage() {
   const main = useRef();
@@ -46,9 +48,13 @@ export function LandingPage() {
   }, []);
 
   return (
-    <div style={{ backgroundColor: "#f9f4e3" }}>
+    <div style={{ backgroundColor: "#f9f4e3", overflow:"hidden" }}>
       <div className="main fadeIn" ref={main}>
         <h1 className="heroSection">
+        <img className="char1" src={char1} alt="char1" style={{ position: "absolute", bottom: 200, left: 780 }} />
+        <p style={{ position: "absolute", bottom: 250, left: 730, fontSize: "19px", fontWeight: "bold" }}>
+          scroll down!
+        </p>
           <span className="B">B</span>
           <span className="R">R</span>
           <span className="E-1">E</span>
@@ -74,6 +80,7 @@ export function LandingPage() {
           As you enter "Calendar," witness the transformation <br /> of scattered thoughts into a
           well-orchestrated schedule. Birthdays, <br /> appointments, exams — this is the canvas for your life's masterpiece.
         </p>
+        <img src={char2} alt="char2" style={{ position: "absolute", top: 715, left: 100 }} />
         <div className="flex flex-col justify-center items-center">
           <div className="flex gap-4">
             <Button text={"Breathe"} color="#ffc9c9" to="/breathe" />

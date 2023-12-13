@@ -6,6 +6,7 @@ import Search from '../components/Search';
 // import NotesHeader from '../components/NotesHeader';
 import "../css/Notes.css"
 import Logo from "../components/Logo";
+import char4 from "../assets/char4.svg"
 
 export function Notes() {
   const [notes, setNotes] = useState([
@@ -50,6 +51,7 @@ export function Notes() {
   return (
     <div>
       <Logo />
+      <img src={char4} alt="char4" style={{ position: "absolute", bottom: 720, left: 780 }} />
       <main className='notes'>
         <div className={`${darkMode && 'dark-mode'}`}>
           <div className='container'>
