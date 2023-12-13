@@ -3,8 +3,9 @@ import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 import NotesList from '../components/NotesList';
 import Search from '../components/Search';
-import Header from '../components/Header';
+// import NotesHeader from '../components/NotesHeader';
 import "../css/Notes.css"
+import Logo from "../components/Logo";
 
 export function Notes() {
   const [notes, setNotes] = useState([
@@ -47,21 +48,24 @@ export function Notes() {
     setNotes(newNotes);
   };
   return (
-    <main className='notes'>
-      <div className={`${darkMode && 'dark-mode'}`}>
-        <div className='container'>
-          <Header handleToggleDarkMode={setDarkMode} />
-          <Search handleSearchNote={setSearchText} />
-          <NotesList
-            notes={notes.filter((note) =>
-              note.text.toLowerCase().includes(searchText)
-            )}
-            handleAddNote={addNote}
-            handleDeleteNote={deleteNote}
-          />
+    <div>
+      <Logo />
+      <main className='notes'>
+        <div className={`${darkMode && 'dark-mode'}`}>
+          <div className='container'>
+            {/* <NotesHeader handleToggleDarkMode={setDarkMode} /> */}
+            <Search handleSearchNote={setSearchText} />
+            <NotesList
+              notes={notes.filter((note) =>
+                note.text.toLowerCase().includes(searchText)
+              )}
+              handleAddNote={addNote}
+              handleDeleteNote={deleteNote}
+            />
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   )
 }
 

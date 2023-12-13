@@ -1,0 +1,21 @@
+/* Header.css */
+.logo {
+  position: fixed;
+  /* Fixed position to stay at the top */
+  top: 10px;
+  /* Distance from the top */
+  left: 50px;
+  /* Distance from the left */
+  width: 100%;
+  /* Full width */
+  padding: 10px;
+  /* Add padding for better visibility */
+  z-index: 1000;
+  /* Optional: Set a higher z-index to ensure it's above other elements */
+  color: black;
+}
+
+.logo h1 {
+  margin: 0;
+  /* Remove default margin for better alignment */
+}
