@@ -9,6 +9,8 @@ import SettingsContext from "./SettingsContext";
 const red = '#f88787';
 const green = '#9df3a9';
 
+const audioFile = "/ring2.mp3";
+
 function Timer() {
     const settingsInfo = useContext(SettingsContext);
 
@@ -20,23 +22,34 @@ function Timer() {
     const isPausedRef = useRef(isPaused);
     const modeRef = useRef(mode);
 
+    const audioRef = useRef(new Audio(audioFile));
+
+    function playRing() {
+        audioRef.current.play();
+    }
+
     function tick() {
         secondsLeftRef.current--;
         setSecondsLeft(secondsLeftRef.current);
+
+        if (secondsLeftRef.current === 0) {
+            playRing(); // Play the ring when the timer reaches zero
+            switchMode();
+        }
+    }
+
+    function switchMode() {
+        const nextMode = modeRef.current === 'work' ? 'break' : 'work';
+        const nextSeconds = (nextMode === 'work' ? settingsInfo.workMinutes : settingsInfo.breakMinutes) * 60;
+
+        setMode(nextMode);
+        modeRef.current = nextMode;
+
+        setSecondsLeft(nextSeconds);
+        secondsLeftRef.current = nextSeconds;
     }
 
     useEffect(() => {
-
-        function switchMode() {
-            const nextMode = modeRef.current === 'work' ? 'break' : 'work';
-            const nextSeconds = (nextMode === 'work' ? settingsInfo.workMinutes : settingsInfo.breakMinutes) * 60;
-
-            setMode(nextMode);
-            modeRef.current = nextMode;
-
-            setSecondsLeft(nextSeconds);
-            secondsLeftRef.current = nextSeconds;
-        }
 
         secondsLeftRef.current = settingsInfo.workMinutes * 60;
         setSecondsLeft(secondsLeftRef.current);
@@ -46,7 +59,8 @@ function Timer() {
                 return;
             }
             if (secondsLeftRef.current === 0) {
-                return switchMode();
+                playRing(); // Play the ring when the timer reaches zero
+                switchMode();
             }
 
             tick();

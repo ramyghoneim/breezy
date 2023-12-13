@@ -3,7 +3,7 @@
   background-color: #f9f4e3;
   display: grid;
   place-items: center;
-  grid-template-columns: 1.9fr 1fr;
+  grid-template-columns: 1.9fr;
   
 
   & .css-1eurbeq-MuiPickersToolbar-root-MuiDatePickerToolbar-root {

@@ -8,8 +8,8 @@ import Logo from "../components/Logo";
 
 export const Breathe = () => {
   const [showSettings, setShowSettings] = useState(false);
-  const [workMinutes, setWorkMinutes] = useState(45);
-  const [breakMinutes, setBreakMinutes] = useState(15);
+  const [workMinutes, setWorkMinutes] = useState(20);
+  const [breakMinutes, setBreakMinutes] = useState(5);
 
   return (
     <div>
