@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/breezy/static/css/main.a40a65c2.css",
+    "main.js": "/breezy/static/js/main.99182641.js",
+    "static/js/787.bc7d429a.chunk.js": "/breezy/static/js/787.bc7d429a.chunk.js",
+    "static/media/char4.svg": "/breezy/static/media/char4.a0c020ae5525d201b68d4d8e3fd46f2b.svg",
+    "static/media/char5.svg": "/breezy/static/media/char5.64da73fa8ac46b3bb3d367e6b3e0a9eb.svg",
+    "static/media/char1.svg": "/breezy/static/media/char1.16fee21a75864eb54857bede3b45598a.svg",
+    "static/media/char2.svg": "/breezy/static/media/char2.94600bc586ce2815ac5840066ad3e498.svg",
+    "static/media/char3.svg": "/breezy/static/media/char3.ec44ca8319cb429e478b24c117007674.svg",
+    "static/media/logo.svg": "/breezy/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/arrow3.svg": "/breezy/static/media/arrow3.32af87c9fdf2b574735aa251e5dd16b0.svg",
+    "static/media/arrow1.svg": "/breezy/static/media/arrow1.a77c4a6db7aa7c902d70a23f473af145.svg",
+    "static/media/arrow2.svg": "/breezy/static/media/arrow2.449858e4eae82f2eb25b406902928c34.svg",
+    "index.html": "/breezy/index.html",
+    "main.a40a65c2.css.map": "/breezy/static/css/main.a40a65c2.css.map",
+    "main.99182641.js.map": "/breezy/static/js/main.99182641.js.map",
+    "787.bc7d429a.chunk.js.map": "/breezy/static/js/787.bc7d429a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a40a65c2.css",
+    "static/js/main.99182641.js"
+  ]
+}
